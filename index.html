@@ -8343,24 +8343,25 @@ textarea.form-control {
 							<div class="col-md-3">
                 <a href ="https://script.google.com/macros/s/AKfycbz-qNjKwd0YOIiLZFo3HezZspJbzsaTO-fcDPQBptpa5pHxUVcyjfEmDClAPsxhOFseaQ/exec">
 								<div class="dbox w-100 text-center">
-			        		<div class="icon d-flex align-items-center justify-content-center" style=" background:#00acc1;">
+			        		<div class="icon d-flex align-items-center justify-content-center" >
 			        			<span class="fa fa-whatsapp fa-fw" style="color:white;"></span>
                     </a>
 			        		</div>
 			        		<div class="text">
-				            <p><span style="font-weight:bold; color:#00acc1;">WhatsApp</span></p>
+                                <p><span></span> <a href="#">WhatsApp</a></p>
 				          </div>
 			          </div>
 							</div>
 							<div class="col-md-3">
                 <a href ="#">
 								<div class="dbox w-100 text-center">
-			        		<div class="icon d-flex align-items-center justify-content-center">
+			        		<div class="icon d-flex align-items-center justify-content-center" style=" background:#00acc1;">
 			        			<span class="fa fa-envelope"></span>
                   </a>
 			        		</div>
 			        		<div class="text">
-				            <p><span></span> <a href="#">Email</a></p>
+                            <p><span style="font-weight:bold; color:#00acc1;">Email</span></p>
+				            
 				          </div>
 			          </div>
 							</div>
@@ -8393,7 +8394,7 @@ textarea.form-control {
 						<div class="row no-gutters">
 							<div class="col-md-7">
 								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3 class="mb-4" style="color:#00acc1;"><b>WhatsApp Messenger</b></h3>
+									<h3 class="mb-4" style="color:#00acc1;"><b>Email Messenger</b></h3>
 									<div id="form-message-warning" class="mb-4"></div> 
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
@@ -8402,8 +8403,8 @@ textarea.form-control {
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
-													<label class="label" for="name">Phone Number</label>
-													<input type="text" maxlength="12" class="form-control" style= "color:gray;" name="name" id="name" placeholder="Enter Number" value="91" required pattern=".{12,}">
+													<label class="label" for="name">Email ID</label>
+													<input type="email" class="form-control" name="name" id="name" placeholder="Enter Email Id" required>
 												</div>
 											</div>
 											<div class="col-md-6"> 
@@ -8493,7 +8494,7 @@ function changeImage() {
 		}
 		else {
 
-        var url = "https://script.google.com/macros/s/AKfycbzO8il0Hp-Nc7E_KLwhERRTkSMviNGCrKzTHw2WpS9F9TPbxWJzeatsM-G6aGdpHbAspA/exec"; 
+        var url = "https://script.google.com/macros/s/AKfycbyMX1n49c-Cf68yDYc3ORgijQb98eqLb0AB2EDGiuAtVM176uy6r5Jmdge7CNuo_rki/exec"; 
         fetch(url, {
         method: "POST",
         headers: {
@@ -8508,7 +8509,7 @@ function changeImage() {
       })
       .catch(error => {
       });
-		document.write("<center><h1>Thank you for submitting your request. You can expect to receive a message in few minutes.</h1></center>");
+		document.write("<center><h1>Thank you for submitting your request. You can expect to receive a email in few minutes.</h1></center>");
 		var goBackButton = document.createElement("button");
                 goBackButton.innerText = "Go Back";
                 goBackButton.onclick = function() {
